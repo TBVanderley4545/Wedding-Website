@@ -5,6 +5,7 @@ $(document).ready(function () {
 
 });
 
+// This code is used to get the total number of days left.
 function calculateDays() {
   var millisecondsInADay = 86400000;
 
