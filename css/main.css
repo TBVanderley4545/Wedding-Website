@@ -1,0 +1,55 @@
+/******************************************
+[Table of contents]***********************/
+/******************************************
+1. GENERAL STYLING
+2. PRIMARY-SECTION-WRAPPER STYLING
+3. EXPANDABLE-SECTION STYLING
+3. MEDIA QUERIES
+    3.1 max-width --> 868px
+    3.2 max-width --> 464px
+
+******************************************/
+/******************************************
+GENERAL STYLING
+******************************************/
+* {
+  margin: 0;
+}
+body {
+  background-color: #fff4c6;
+}
+ul {
+  list-style: none;
+}
+.content-wrapper {
+  margin: 6em 1.875em;
+}
+/******************************************
+PRIMARY-SECTION-WRAPPER STYLING
+******************************************/
+.primary-section-wrapper {
+  background-color: #f5defe;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  z-index: 1000;
+}
+.wedding-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+}
+/******************************************
+EXPANDABLE-SECTION  STYLING
+******************************************/
+.expandable-section {
+  background-color: #f5defe;
+  border-top: 1px solid rgba(32, 28, 28, 0.43);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+}
+.expandable-section .section-title {
+  font-family: 'Great Vibes', cursive;
+}
+
+/*# sourceMappingURL=main.css.map */
