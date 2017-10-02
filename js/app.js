@@ -1,8 +1,6 @@
 $(document).ready(function () {
   // This is to display the remaining days on the main page.
   $(".date-counter").text(calculateDays());
-
-
 });
 
 // This code is used to get the total number of days left.
