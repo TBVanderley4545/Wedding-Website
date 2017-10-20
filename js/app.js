@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   // This is to display the remaining days on the main page.
   $(".date-counter").text(calculateDays());
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
   }
 
   // This is used to get the initial height of the expandable sections.
-  $('.expanded-content').each(function () {
+  $('.expanded-content').each(function() {
     $(this).attr("element-height", $(this).outerHeight(true));
     $(this).css({
       height: 0,
@@ -26,7 +26,7 @@ $(document).ready(function () {
   });
 
   // This is used to handle the nav being clicked.
-  $('.section-title').click(function (e) {
+  $('.section-title').click(function(e) {
     var expandableSection = $(this).closest('.expandable-section');
     var expandableContent = expandableSection.find('.expanded-content');
 
