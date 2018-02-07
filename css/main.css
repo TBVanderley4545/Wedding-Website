@@ -51,5 +51,8 @@ EXPANDABLE-SECTION  STYLING
 .expandable-section .section-title {
   font-family: 'Great Vibes', cursive;
 }
+.expanded-content {
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=main.css.map */
