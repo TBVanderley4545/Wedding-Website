@@ -4,8 +4,9 @@
 1. GENERAL STYLING
 2. PRIMARY-SECTION-WRAPPER STYLING
 3. EXPANDABLE-SECTION STYLING
-4. ACCOMODATIONS STYLING
-5. MEDIA QUERIES
+4. DETAILS STYLING
+5. ACCOMODATIONS STYLING
+6. MEDIA QUERIES
     3.1 max-width --> 868px
     3.2 max-width --> 464px
 
@@ -17,7 +18,7 @@ GENERAL STYLING
   margin: 0;
 }
 body {
-  background-color: #fff4c6;
+  background-color: #F0EEE2;
 }
 ul {
   list-style: none;
@@ -31,6 +32,7 @@ PRIMARY-SECTION-WRAPPER STYLING
 .primary-section-wrapper {
   background-color: #f5defe;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 3.125em;
   position: relative;
   text-align: center;
   z-index: 1000;
@@ -44,16 +46,30 @@ EXPANDABLE-SECTION  STYLING
 ******************************************/
 .expandable-section {
   background-color: #f5defe;
-  border-top: 1px solid rgba(32, 28, 28, 0.43);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  padding: 1.25em;
   text-align: center;
+}
+.expandable-section:nth-child(n + 3) {
+  border-top: 1px solid rgba(32, 28, 28, 0.43);
 }
 .expandable-section .section-title {
   font-family: 'Great Vibes', cursive;
 }
 .expandable-section .expanded-content {
   visibility: hidden;
+}
+/******************************************
+DETAILS  STYLING
+******************************************/
+.expandable-section .expanded-content .key-information {
+  padding-top: 1.875em;
+}
+.expandable-section .expanded-content .key-information .map {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
 }
 /******************************************
 ACCOMODATIONS  STYLING
