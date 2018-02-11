@@ -7,9 +7,10 @@
 3. EXPANDABLE-SECTION STYLING
 4. DETAILS STYLING
 5. ACCOMODATIONS STYLING
-6. MEDIA QUERIES
-    3.1 max-width --> 868px
-    3.2 max-width --> 464px
+6. REGISTRY STYLING
+7. MEDIA QUERIES
+    7.1 max-width --> 868px
+    7.2 max-width --> 464px
 
 ******************************************/
 //*****************************************
@@ -22,6 +23,7 @@
 // Measurements
 @height-quote-social-section: 2.875em;
 @font-size-social-logo: 1.015em;
+@first-element-expandable-content-top-padding: 1.875em;
 
 // font
 @font-fancy-font: 'Great Vibes', cursive;
@@ -40,6 +42,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .content-wrapper {
@@ -89,17 +92,23 @@ EXPANDABLE-SECTION  STYLING
 }
 
 /******************************************
-DETAILS  STYLING
+DETAILS STYLING
 ******************************************/
 
 .expandable-section {
   .expanded-content {
     .key-information {
-      padding-top: 1.875em;
+      padding-top: @first-element-expandable-content-top-padding;
 
       li {
         &:nth-child(n + 2) {
           margin: 1.875em auto 0;
+        }
+
+        .key-times {
+          li {
+            margin: 0.4em auto 0;
+          }
         }
       }
 
@@ -112,20 +121,44 @@ DETAILS  STYLING
 }
 
 /******************************************
-ACCOMODATIONS  STYLING
+ACCOMODATIONS STYLING
 ******************************************/
 
 .expandable-section {
   .expanded-content {
     .accomodation-info {
       &:first-child {
-        padding-top: 1.875em;
+        padding-top: @first-element-expandable-content-top-padding;
       }
       &:nth-child(n + 2) {
         margin-top: 1.875em;
       }
-      ul {
-        padding: 0;
+    }
+  }
+}
+
+/******************************************
+REGISTRY STYLING
+******************************************/
+
+.expandable-section {
+  .expanded-content {
+    .registries {
+      &:first-child {
+        padding-top: @first-element-expandable-content-top-padding;
+      }
+
+      .registry-item {
+        a {
+          color: #000;
+          font-size: 1.25em;
+          text-decoration: none;
+
+          &:hover {
+            color: #007ACC;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
