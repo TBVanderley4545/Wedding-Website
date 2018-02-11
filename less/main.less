@@ -16,7 +16,7 @@
 // LESS
 //****************************************/
 // Colors
-@color-body-background: #F0EEE2;
+@color-body-background: #f0eee2;
 @color-primary-section-color: #f5defe;
 
 // Measurements
@@ -95,12 +95,17 @@ DETAILS  STYLING
 .expandable-section {
   .expanded-content {
     .key-information {
-      padding-top:1.875em;
+      padding-top: 1.875em;
+
+      li {
+        &:nth-child(n + 2) {
+          margin: 1.875em auto 0;
+        }
+      }
 
       .map {
         height: 400px;
         width: 500px;
-        margin: 0 auto;
       }
     }
   }
