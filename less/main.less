@@ -5,7 +5,8 @@
 1. GENERAL STYLING
 2. PRIMARY-SECTION-WRAPPER STYLING
 3. EXPANDABLE-SECTION STYLING
-3. MEDIA QUERIES
+4. ACCOMODATIONS STYLING
+5. MEDIA QUERIES
     3.1 max-width --> 868px
     3.2 max-width --> 464px
 
@@ -74,8 +75,25 @@ EXPANDABLE-SECTION  STYLING
   .section-title {
     font-family: @font-fancy-font;
   }
+
+  .expanded-content {
+    visibility: hidden;
+  }
 }
 
-.expanded-content {
-  visibility: hidden;
+/******************************************
+ACCOMODATIONS  STYLING
+******************************************/
+
+.expandable-section {
+  .expanded-content {
+    .accomodation-info {
+      &:nth-child(n+2) {
+        margin-top: 1.875em;
+      }
+      ul {
+        padding: 0;
+      }
+    }
+  }
 }
