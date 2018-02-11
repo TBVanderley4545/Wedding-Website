@@ -58,7 +58,10 @@ EXPANDABLE-SECTION  STYLING
 /******************************************
 ACCOMODATIONS  STYLING
 ******************************************/
-.expandable-section .expanded-content .accomodation-info:nth-child(n+2) {
+.expandable-section .expanded-content .accomodation-info:first-child {
+  padding-top: 1.875em;
+}
+.expandable-section .expanded-content .accomodation-info:nth-child(n + 2) {
   margin-top: 1.875em;
 }
 .expandable-section .expanded-content .accomodation-info ul {
